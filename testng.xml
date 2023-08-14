@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CSR Tests" configfailurepolicy="continue">
+
+    <listeners>
+        <listener class-name="com.ebay.listeners.TestListener"/>
+    </listeners>
+
+    <test parallel="classes" thread-count="1" name="CSR Tests">
+        <packages>
+            <package name="com.sumerge.CSR.tests.adminscreens"/>
+            <package name="com.sumerge.CSR.tests.company"/>
+            <package name="com.sumerge.CSR.tests.govEntityScreens.events"/>
+            <package name="com.sumerge.CSR.tests.govEntityScreens.initiatives"/>
+            <package name="com.sumerge.CSR.tests.homepage"/>
+            <package name="com.sumerge.CSR.tests.ideasBank"/>
+            <package name="com.sumerge.CSR.tests.Search"/>
+            <package name="com.sumerge.CSR.tests.publicscreens.events"/>
+            <package name="com.sumerge.CSR.tests.publicscreens.initiatives"/>
+            <package name="com.sumerge.CSR.tests.publicscreens.prizes"/>
+            <package name="com.sumerge.CSR.tests.publicscreens.users"/>
+            <package name="com.sumerge.CSR.tests.registration"/>
+            <package name="com.sumerge.CSR.tests.reviewerScreens.events"/>
+            <package name="com.sumerge.CSR.tests.reviewerScreens.initiatives"/>
+            <package name="com.sumerge.CSR.tests.reviewerScreens.npo"/>
+            <package name="com.sumerge.CSR.tests.supervisorScreens.events"/>
+            <package name="com.sumerge.CSR.tests.supervisorScreens.initiatives"/>
+            <package name="com.sumerge.CSR.tests.supervisorScreens.npo"/>
+            <package name="com.sumerge.CSR.tests.supervisorScreens.prizes"/>
+            <package name="com.sumerge.CSR.tests.supervisorScreens.research"/>
+            <package name="com.sumerge.CSR.tests.supervisorScreens.SMEs"/>
+            <package name="com.sumerge.CSR.tests.supervisorScreens.TestMinistryReportPage"/>
+        </packages>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
